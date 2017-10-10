@@ -46,9 +46,39 @@ $$ T[V](k) = \max_{k'} \{u(k^{\alpha} + (1-\delta)k - k') + \beta V(k')\}$$
 A solução do problema do consumidor consiste num ponto fixo deste operador.
 
 \item Código anexo.
-\item Código anexo.
+\item O tamanho do grid utilizado para este exercício foi de 5000 pontos. O capital do estado estacionário calculado de maneira analítica é dado por 
+$$ K_{ss} = \left[\frac{1}{\alpha}\left(\frac{1}{\beta} - 1 + \delta \right) \right]^{\frac{1}{\alpha -1}} $$
+
+Com os parâmetros dados, temos que $K_{ss} \approx 353.3$. Numericamente, começando em $K_{0} = 2$ (bem longe do estado estacionário), encontramos os seguintes resultados:
+\begin{center}
+	\begin{tabular}{c | c}
+Variável & Valor Simulado\\
+\hline
+$K_{ss}$ & 352.5842 \\
+\hline
+$C_{ss}$ & 25.4269 \\
+\hline
+$Y_{ss}$ & 60.6854	
+\end{tabular} 
+\end{center}
+
+\item Neste modelo, a possibilidade de obter uma fórmula fechada para o nível de capital do estado estacionário nos permite antever que um aumento de $\beta$ provoca um aumento em $K_{ss}$. A intuição é a de que se o agente representativo valoriza mais o futuro, algo traduzido matematicamente por um valor mais alto de $\beta$, então poupará mais e consumirá menos, padrão de comportamento este que viabiliza um nível de capital mais elevado no estado estacionário.
+
+Com efeito, tomamos 100 valores diferentes para o parâmetro $\beta$ entre zero e 1 e calculamos numericamente qual seria o $K_{ss}$ encontrado, ainda utilizando os valores dados no enunciado para os outros parâmetros. A seguir, o gráfico que ilustra esta relação e confirma nossa intuição:
+
+\begin{center}
+\includegraphics[scale = 0.3]{kss-beta}	
+\end{center}
+
+\item Como vemos, o parâmetro $gamma$ não afeta o \textit{nível} do capital no estado estacionário. A razão para isso é que como os consumos serão os mesmos, as utilidades marginais serão as mesmas, sem depender da curvatura da função utilidade. Mais uma vez, o exercício numérico confirma nossa intuição:
+
+\begin{center}
+\includegraphics[scale = 0.3]{kss-gamma}
+\end{center}
 
 \end{enumerate}
+
+
 
 \section*{Exercício 3}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.15)  9 OCT 2017 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.7.15)  10 OCT 2017 00:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,20 +258,31 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.aux) ) 
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<kss-beta.jpg, id=18, 1124.2pt x 843.15pt>
+File: kss-beta.jpg Graphic file (type jpg)
+<use kss-beta.jpg>
+Package pdftex.def Info: kss-beta.jpg  used on input line 70. on input line 70.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 70.
+<kss-gamma.jpg, id=19, 1124.2pt x 843.15pt>
+File: kss-gamma.jpg Graphic file (type jpg)
+<use kss-gamma.jpg>
+Package pdftex.def Info: kss-gamma.jpg  used on input line 76. on input line 76.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 76.
+ [2 <./kss-beta.jpg> <./kss-gamma.jpg>] [3] (/Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.aux) ) 
 Here is how much of TeX's memory you used:
- 3305 strings out of 492990
- 44485 string characters out of 6132636
- 117903 words of memory out of 5000000
- 6809 multiletter control sequences out of 15000+600000
- 9179 words of font info for 27 fonts, out of 8000000 for 9000
+ 3319 strings out of 492990
+ 44678 string characters out of 6132636
+ 119903 words of memory out of 5000000
+ 6818 multiletter control sequences out of 15000+600000
+ 9865 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,32p,338b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.pdf (2 pages, 120056 bytes).
+ 41i,16n,32p,493b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on /Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.pdf (3 pages, 236632 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
