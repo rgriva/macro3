@@ -28,7 +28,8 @@
 \begin{enumerate}[i)]
 \item Seja a função $u(.)$ estritamente crescente. Isto implica que a restrição de recursos do planejador vale com igualdade em todo instante do tempo. Dada a parametrização escolhida, isto é equivalente a $\gamma > 0$. Daí, é verdade que 
 $$c_{t} = k_{t}^{\alpha} + (1-\delta)k_{t} - k_{t+1}$$ em todo período, já introduzindo o formato funcional da função de produção. Deste modo, o problema pode ser visto como a escolha da sequência ótima de capital:
-\begin{gather*}\max_{\{k_{t+1}\}_{t=0}^{\infty}} \left\{\sum\limits_{t=0}^{\infty} \beta^{t}u( k_{t}^{\alpha} + (1-\delta)k_{t} - k_{t+1})\right\} \\ 
+\begin{gather*}
+\max_{\{k_{t+1}\}_{t=0}^{\infty}} \left\{\sum\limits_{t=0}^{\infty} \beta^{t}u( k_{t}^{\alpha} + (1-\delta)k_{t} - k_{t+1})\right\} \\ 
 \text{s.a } \begin{cases}
  	k_{t+1} \in [0, k_{t}^{\alpha}]\\
  	k_{0} \text{ dado}
@@ -81,6 +82,39 @@ Com efeito, tomamos 100 valores diferentes para o parâmetro $\beta$ entre zero e
 
 
 \section*{Exercício 3}
+
+\begin{enumerate}[i)]
+	\item O problema do planejador consiste em:
+\begin{gather*}
+	\max_{\{c_{t}, k_{t+1}\}_{t=0}^{\infty}} \mathbb{E}_{0} \left\{\sum\limits_{t=0}^{\infty} \beta^{t}u(c_{t})\right\}\\
+	\text{s.a } \begin{cases}
+		c_{t} + k_{t+1} \leq (1-\delta)k_{t} + z_{t}k_{t}^{\alpha}, \quad \forall t \geq 0\\
+		k_{0} \text{ dado}
+	\end{cases}
+\end{gather*}
+
+\item A hipótese de que a função utilidade é estritamente crescente nos permite utilizar a restrição orçamentária com igualdade. Além disso, as variáveis de estado da economia são o capital atual e o estado atual da TFP. A única variável de escolha é o capital do próximo período, que determinará o consumo atual através da restrição orçamentária. A equação funcional enfrentada pelo planejador é dada por:
+\begin{gather*}
+	V(k,z) = \max_{k'} \{u(zk^{\alpha} + (1-\delta)k - k') + \beta\mathbb{E}(V(k', z') | z)\}, \quad \text{onde} \\
+	\mathbb{E}(V(k', z') | z)\} = \mathbb{P}(z' = \bar{z} |z)V(k', \bar{z}) + \mathbb{P}(z' = \underline{z} |z)V(k', \underline{z})
+\end{gather*}
+
+\item O operador de Bellman nesse caso é dado por:
+\begin{equation*}
+	T[V](k,z) = \max_{k'} \{u(zk^{\alpha} + (1-\delta)k - k') + \beta\mathbb{E}(V(k', z') | z)\}
+\end{equation*}
+
+\item Código anexo.
+\item Reportando as funções valor e política do problema:
+\begin{center}
+	\includegraphics[scale=0.2]{stochastic_value&policy}
+\end{center}
+
+\end{enumerate}
+
+
+
+
 
 \section*{Exercício 4}
 Facultativo.
