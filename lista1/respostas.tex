@@ -1,0 +1,62 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[brazilian]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\linespread{1.3}
+\parskip=12pt
+\parindent=0pt
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+	\begin{center}
+		{\Large{\textbf{Lista 1 - Macroeconomia III 2017}}}\\
+		\vspace{0.2cm}
+		Professor: Ricardo Cavalcanti\\
+		Monitora: Kátia Alves\\
+		Alunos: Alexandre Machado e Raul Guarini
+	\end{center}
+	
+\section*{Exercício 1}
+
+\section*{Exercício 2}
+
+\begin{enumerate}[i)]
+\item Seja a função $u(.)$ estritamente crescente. Isto implica que a restrição de recursos do planejador vale com igualdade em todo instante do tempo. Dada a parametrização escolhida, isto é equivalente a $\gamma > 0$. Daí, é verdade que 
+$$c_{t} = k_{t}^{\alpha} + (1-\delta)k_{t} - k_{t+1}$$ em todo período, já introduzindo o formato funcional da função de produção. Deste modo, o problema pode ser visto como a escolha da sequência ótima de capital:
+\begin{gather*}\max_{\{k_{t+1}\}_{t=0}^{\infty}} \left\{\sum\limits_{t=0}^{\infty} \beta^{t}u( k_{t}^{\alpha} + (1-\delta)k_{t} - k_{t+1})\right\} \\ 
+\text{s.a } \begin{cases}
+ 	k_{t+1} \in [0, k_{t}^{\alpha}]\\
+ 	k_{0} \text{ dado}
+ \end{cases}
+\end{gather*}
+
+\item A variável de estado relevante é o capital atual, sendo o consumo atual e o capital do próximo período as variáveis de controle. Entretanto, a restrição de recursos, ao valer com igualdade, nos permite lidar apenas com uma variável de controle, a saber, o capital do próximo período. Formulação recursiva:
+\begin{gather*}
+	V(k) = \max_{k'} \{u(k^{\alpha} + (1-\delta)k - k') + \beta V(k')\} \\
+	\text{s.a } k' \in [0, k^{\alpha}]
+\end{gather*}
+
+\item O operador de Bellman nesse caso é dado por 
+$$ T[V](k) = \max_{k'} \{u(k^{\alpha} + (1-\delta)k - k') + \beta V(k')\}$$
+A solução do problema do consumidor consiste num ponto fixo deste operador.
+
+\item Código anexo.
+\item Código anexo.
+
+\end{enumerate}
+
+\section*{Exercício 3}
+
+\section*{Exercício 4}
+
+\section*{Exercício 5}
+
+\section*{Exercício 6}
+
+\section*{Exercício 7}
+\end{document}
