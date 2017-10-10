@@ -23,5 +23,5 @@ while diff > epsilon && it < maxit
     xold = xnew;
 end
 
-solution = xnew
-iterations = it
+solution = xnew;
+iterations = it;

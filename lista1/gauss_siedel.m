@@ -1,5 +1,5 @@
-function [solution, iterations] = gauss_solver(A, b, x0, epsilon, maxit)
-% GAUSS_SOLVER(A, b, x0, epsilon, maxit) uses the classic Gauss-Siedel method 
+function [solution, iterations] = gauss_siedel(A, b, x0, epsilon, maxit)
+% GAUSS_SIEDEL(A, b, x0, epsilon, maxit) uses the classic Gauss-Siedel method 
 % for solving linear systems of the form Ax = b where A is nxn nonsingular 
 % matrix, b is nx1, x0 is the initial guess for the solution, 
 % epsilon is a convergence parameter and maxit is the maximal 
@@ -23,5 +23,5 @@ while diff > epsilon && it < maxit
     xold = xnew;
 end
 
-solution = xnew
-iterations = it
+solution = xnew;
+iterations = it;

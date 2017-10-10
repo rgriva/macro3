@@ -83,10 +83,57 @@ Com efeito, tomamos 100 valores diferentes para o parâmetro $\beta$ entre zero e
 \section*{Exercício 3}
 
 \section*{Exercício 4}
+Facultativo.
 
 \section*{Exercício 5}
+Para este exercício numérico, utilizamos como parâmetro de convergência o valor $\epsilon = 10^{-3}$ e como condição inicial o vetor nulo.
+\begin{enumerate}[a)]
+	\item Pelo método de Jacobi, foram necessárias 7 iterações:
+	\begin{center}
+	\begin{tabular}{c|c}
+		Iteração & $\bold{x}$\\
+		\hline
+		1 & $(-0.2000,0.2222, -0.4286)$\\
+		\hline
+		2 & $(0.1460,
+    0.2032,
+   -0.5175)$\\
+		\hline
+		3 & $(0.1917,
+    0.3284,
+   -0.4159)$\\
+		\hline
+		4 & $(0.1809,
+    0.3323,
+   -0.4207)$\\
+		\hline
+		5 & $(0.1854,
+    0.3293,
+   -0.4244)
+$\\
+		\hline
+		6 & $(0.1863,
+    0.3312,
+   -0.4226)$\\
+		\hline
+		7 & $(0.1861,
+    0.3313,
+   -0.4226)$\\
+	\end{tabular}
+	\end{center}
+	
+	\item O método de eliminação de Gauss encontra perfeitamente a solução, dada por $\bold{x} = (0.1861, 0.3312, -0.4227)$. As iterações estão dispostas no código. 
+\end{enumerate}
 
 \section*{Exercício 6}
+
+\begin{enumerate}[a)]
+	\item Continuamos utilizando a mesma condição inicial e parâmetro de convergência do item anterior. As iterações estão reportadas no próprio código. Notamos que nesse caso o método de Jacobi falha, apesar da solução estar bem definida uma vez que a matriz $A$ é não-singular. De fato, não temos uma matriz em que a diagonal principal seja dominante, uma condição suficiente usual para a convergência do método de Jacobi. A saber, a solução é $\bold{x} = (1,1)$. O algoritmo gera valores de $\bold{x}$ arbitrariamente grandes.
+	\item Tentamos com a condição de inicial $(-3,1)$ e obtivemos a mesma solução explosiva.
+	\item Solução encontrada pelo método de eliminação de Gauss: $\bold{x} = (1,1)$.
+\end{enumerate}
+
+ 
 
 \section*{Exercício 7}
 \end{document}
