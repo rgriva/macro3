@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  10 OCT 2017 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.10)  11 OCT 2017 01:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -249,50 +249,61 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<mccal_value&policy.jpg, id=1, 1124.2pt x 843.15pt>
+File: mccal_value&policy.jpg Graphic file (type jpg)
+<use mccal_value&policy.jpg>
+Package pdftex.def Info: mccal_value&policy.jpg  used on input line 28. on input line 28.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 28.
+<mccalnew_value&policy.jpg, id=2, 1124.2pt x 843.15pt>
+File: mccalnew_value&policy.jpg Graphic file (type jpg)
+<use mccalnew_value&policy.jpg>
+Package pdftex.def Info: mccalnew_value&policy.jpg  used on input line 33. on input line 33.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 33.
+ [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<kss-beta.jpg, id=18, 1124.2pt x 843.15pt>
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./mccal_value&policy.jpg>] [2 <./mccalnew_value&policy.jpg>]
+<kss-beta.jpg, id=23, 1124.2pt x 843.15pt>
 File: kss-beta.jpg Graphic file (type jpg)
 <use kss-beta.jpg>
-Package pdftex.def Info: kss-beta.jpg  used on input line 71. on input line 71.
-Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 71.
-<kss-gamma.jpg, id=19, 1124.2pt x 843.15pt>
+Package pdftex.def Info: kss-beta.jpg  used on input line 88. on input line 88.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 88.
+<kss-gamma.jpg, id=24, 1124.2pt x 843.15pt>
 File: kss-gamma.jpg Graphic file (type jpg)
 <use kss-gamma.jpg>
-Package pdftex.def Info: kss-gamma.jpg  used on input line 77. on input line 77.
-Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 77.
- [2 <./kss-beta.jpg> <./kss-gamma.jpg>]
-<stochastic_value&policy.jpg, id=24, 2009.5075pt x 1276.77pt>
+Package pdftex.def Info: kss-gamma.jpg  used on input line 94. on input line 94.
+Package pdftex.def Info: Requested size: 337.2626pt x 252.94695pt on input line 94.
+ [3 <./kss-beta.jpg>]
+<stochastic_value&policy.jpg, id=29, 2009.5075pt x 1276.77pt>
 File: stochastic_value&policy.jpg Graphic file (type jpg)
 <use stochastic_value&policy.jpg>
-Package pdftex.def Info: stochastic_value&policy.jpg  used on input line 110. on input line 110.
-Package pdftex.def Info: Requested size: 401.89438pt x 255.34947pt on input line 110.
- [3 <./stochastic_value&policy.jpg>]
+Package pdftex.def Info: stochastic_value&policy.jpg  used on input line 127. on input line 127.
+Package pdftex.def Info: Requested size: 401.89438pt x 255.34947pt on input line 127.
+ [4 <./kss-gamma.jpg>]
 
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 128.
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 145.
 
-[4] (/Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.aux) ) 
+[5 <./stochastic_value&policy.jpg>] [6] (/Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.aux) ) 
 Here is how much of TeX's memory you used:
- 3340 strings out of 492990
- 45140 string characters out of 6132635
- 120944 words of memory out of 5000000
- 6835 multiletter control sequences out of 15000+600000
+ 3350 strings out of 492990
+ 45413 string characters out of 6132635
+ 118944 words of memory out of 5000000
+ 6843 multiletter control sequences out of 15000+600000
  10792 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,32p,553b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,32p,612b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on /Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.pdf (4 pages, 367341 bytes).
+Output written on /Users/Raul/Dropbox/Code/macro3/lista1/.texpadtmp/respostas.pdf (6 pages, 478962 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

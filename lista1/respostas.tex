@@ -22,6 +22,23 @@
 	\end{center}
 	
 \section*{Exercício 1}
+\begin{enumerate}[i)]
+	\item O código para a solução numérica vai em anexo. Para os parâmetros dados podemos calcular $\alpha_{1} = 1/15$ e $\alpha_{2} = -1/600$. Reportamos as funções valor e política do problema:
+\begin{center}
+	\includegraphics[scale = 0.3]{mccal_value&policy}
+\end{center}
+Notamos que a função política é zero para valores baixos do salário e torna-se eventualmente 1. Isto se deve à monotonicidade da função utilidade e do fato de que $V(.)$ é contínua. Em equilíbrio, os agentes só aceitam emprego se recebem uma oferta (estocástica) suficientemente alta. Portanto, para valores abaixo do salário de reserva, $V$ é constante no valor $V(0)$ pois para um salário tão baixo a máxima utilidade é alcançada ao se recusar a oferta, receber a transferência $b$ e o valor esperado da utilidade de continuação a partir do próximo período, valores estes que independem de $w$.
+\item Com a nova parametrização da densidade de probabilidade, temos que $\alpha_{1} = 1/30$ e $\alpha_{2} = 1/600$. Uma mudança importante é que agora a densidade é crescente em $w$, de maneira que há relativamente mais massa de probabilidade em valores maiores de $w$ do que anteriormente. Reportando as funções valor e política:
+\begin{center}
+	\includegraphics[scale=0.3]{mccalnew_value&policy}
+\end{center}
+
+\item Há somente um tipo de desemprego nesta economia, causado por uma imperfeição no mercado de trabalho. O lado da demanda por mão-de-obra é puramente estocástico, fato que pode ser modelado através do sorteio do salário de mercado em todo período pela natureza. O desemprego não aparece, neste modelo, como um descompasso entre oferta e demanda por trabalho mas sim por uma característica de informação imperfeita presente nos contratos de trabalho.
+
+\item O salário de reserva é aquele que deixa o trabalhador indiferente entre aceitar a oferta atual e continuar procurando emprego no próximo período. Graficamente, é o nível $\bar{w}$ em que a função política muda de patamar. Para a primeira parametrização, isto corresponde a $\bar{w} = 8.7888$.
+
+\end{enumerate}
+
 
 \section*{Exercício 2}
 
