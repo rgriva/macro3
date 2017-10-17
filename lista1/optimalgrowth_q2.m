@@ -64,7 +64,7 @@ xlabel('k');
 title('Funcao Politica')
 
 %% Simulando trajetoria do capital
-k0 = 22;
+k0 = 2;
 d = abs(kgrid - k0*ones(size(kgrid)));
 start = find(d == min(d));
 

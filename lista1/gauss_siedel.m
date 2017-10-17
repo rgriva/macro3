@@ -4,7 +4,7 @@ function [solution, iterations] = gauss_siedel(A, b, x0, epsilon, maxit)
 % matrix, b is nx1, x0 is the initial guess for the solution, 
 % epsilon is a convergence parameter and maxit is the maximal 
 % number of iterations.
-% [x, y] = GAUSS_SOLVER(A, b, x0, epsilon, maxit) returns the computed 
+% [x, y] = GAUSS_SIEDEL(A, b, x0, epsilon, maxit) returns the computed 
 % solution at x and the total number of iterations at y.
 % Sufficient conditions for convergence: Matrix A should be diagonal 
 % dominant or positive semi-definite.

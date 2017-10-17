@@ -187,4 +187,35 @@ $\\
  
 
 \section*{Exercício 7}
+Os dados para este exercício foram retirados do IBGE, IPEADATA, Banco Central do Brasil e Yahoo! Finance, disponíveis na planilha em anexo \textit{data.xlsx} . A calibração seguiu os passos do artigo original de Mehra e Prescott (1985).
+
+Uma importante diferença com relação ao trabalho original é que no exercício em questão foram utilizados apenas 21 observações (de 1994 a 2014), o que nos dá por exemplo apenas 20 observações de retorno de ativos, uma vez que precisamos de um ano base, escolhido aqui como 1994. O artigo original usa uma série de consumo das famílias para os EUA muito mais extensa, o que potencialmente dilui a importância de eventos como uma inflação maior muito maior que a média histórica num determinado ano ou flutuações abruptas na taxa livre de risco. Isto se torna especialmente importante no caso brasileiro, onde a taxa de retorno dos ativos de renda fixa tem sido persistentemente elevada.
+
+A calibração resultou em:
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+	\hline
+\textbf{Parâmetro} & \textbf{Valor Calibrado}\\
+\hline
+$\mu$ & 0.0595\\
+\hline
+$\phi$ & 0.5578\\
+\hline
+$\delta$ & 0.1979\\
+\hline
+\end{tabular}
+\end{center}
+
+O retorno médio do IBOVESPA nestes anos foi de 17,47\%, ao passo que a SELIC média\footnote{Foram utilizados como observações anuais o valor da meta SELIC no último dia do ano e depois tomou-se um média aritmética.} foi de 18,15\%. Isto por si só já demonstra que há algo de patológico na série histórica brasileira: o retorno médio dos ativos arriscados fica abaixo do retorno médio daquela que seria a taxa livre de risco. Uma possível interpretação do que ocorreu é a de que no anos imediatamente posteriores ao Plano Real a SELIC teve de permanecer em patamares elevados a fim de compatibilizar a ancoragem do câmbio empregada pelo Banco Central no período. De fato, a partir de 1999, ano da flexibilização do regime cambial, a SELIC é deslocada para um patamar inferior ao que vigorava anteriormente e apresenta trajetória de queda, a não ser pelo ano de 2003, logo em seguida da eleição presidencial.
+
+Portanto, o prêmio de risco (\textit{equity premium}) associado à economia brasileira na janela de tempo em questão é de -0,69\%. Os valores de $\beta$ e $\sigma$ utilizados variaram de 0.1 a 0.99 e de 1 a 10, respectivamente. Foram utilizados 500 pontos nas discretizações.
+
+Os valores $(\beta, \sigma)$ que fizeram com o prêmio de risco simulado pelo modelo mais se aproximasse daquele encontrado nos dados foram $(0.7944, 7.4208)$. A diferença entre estas duas quantidades é da ordem de $10^{-7}$. O tempo total de execução do código é de menos de 8 segundos. Abaixo, uma parte da superfície gerada pelas combinações de $(\beta, \sigma)$ e pelo módulo da diferença entre o prêmio de risco simulado e o prêmio de risco dos dados.
+
+\begin{center}
+	\includegraphics[scale = 0.25]{equitypremium}
+\end{center}
+
+Com efeito, o valor ótimo de $\sigma$ foge ligeiramente do intervalo mais aceito na literatura entre 1 e 5, aproximadamente, mas não chega a ser o caso em que precisamos ir até valores da ordem de grandeza de 50 para conseguir replicar o comportamento dos dados. Uma interpretação para a \textit{inexistência} de um \textit{puzzle} neste caso, em constraste com o trabalho de Mehra e Prescott para a economia americana, pode ser a de que o comportamento dos ativos de renda fixa no Brasil faz com que o prêmio de risco visto nos dados seja muito menor do que em outros países. Tal fato implica que o modelo não precisa de parâmetros extremos para replicar o diferencial de retornos.
 \end{document}
