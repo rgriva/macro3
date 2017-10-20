@@ -209,13 +209,15 @@ $\delta$ & 0.1979\\
 
 O retorno médio do IBOVESPA nestes anos foi de 17,47\%, ao passo que a SELIC média\footnote{Foram utilizados como observações anuais o valor da meta SELIC no último dia do ano e depois tomou-se um média aritmética.} foi de 18,15\%. Isto por si só já demonstra que há algo de patológico na série histórica brasileira: o retorno médio dos ativos arriscados fica abaixo do retorno médio daquela que seria a taxa livre de risco. Uma possível interpretação do que ocorreu é a de que no anos imediatamente posteriores ao Plano Real a SELIC teve de permanecer em patamares elevados a fim de compatibilizar a ancoragem do câmbio empregada pelo Banco Central no período. De fato, a partir de 1999, ano da flexibilização do regime cambial, a SELIC é deslocada para um patamar inferior ao que vigorava anteriormente e apresenta trajetória de queda, a não ser pelo ano de 2003, logo em seguida da eleição presidencial.
 
-Portanto, o prêmio de risco (\textit{equity premium}) associado à economia brasileira na janela de tempo em questão é de -0,69\%. Os valores de $\beta$ e $\sigma$ utilizados variaram de 0.1 a 0.99 e de 1 a 10, respectivamente. Foram utilizados 500 pontos nas discretizações.
+Esta interpretação motiva repetir o exercício tendo por base o ano de 1995, para pegarmos uma série "limpa". Nesse caso, o retorno médio do IBOVESPA sobe para 22,17\% enquanto o a SELIC média fica em 16,98\%, resultando um prêmio de risco de pouco mais de 5\%. 
 
-Os valores $(\beta, \sigma)$ que fizeram com o prêmio de risco simulado pelo modelo mais se aproximasse daquele encontrado nos dados foram $(0.7944, 7.4208)$. A diferença entre estas duas quantidades é da ordem de $10^{-7}$. O tempo total de execução do código é de menos de 8 segundos. Abaixo, uma parte da superfície gerada pelas combinações de $(\beta, \sigma)$ e pelo módulo da diferença entre o prêmio de risco simulado e o prêmio de risco dos dados.
+Os valores de $\beta$ e $\sigma$ utilizados variaram de 0.9 a 0.999 e de 1 a 10, respectivamente. Foram utilizados 200 pontos nas discretizações.
 
+Os valores $(\beta; \sigma)$ que fizeram com que o prêmio de risco simulado pelo modelo mais se aproximasse daquele encontrado nos dados foram $(0.9658; 7.3769)$ no caso em que o ano base é 1994 e $(0.9721; 1)$ no caso em que usamos 1995 como base. Abaixo, visualiza-se o módulo da diferença entre o prêmio de risco calculado pelo modelo e o calculado através dos dados, para cada combinação de $\beta$ e $\sigma$.
 \begin{center}
-	\includegraphics[scale = 0.25]{equitypremium}
+	\includegraphics[scale = 0.32]{equitypremium}
 \end{center}
 
-Com efeito, o valor ótimo de $\sigma$ foge ligeiramente do intervalo mais aceito na literatura entre 1 e 5, aproximadamente, mas não chega a ser o caso em que precisamos ir até valores da ordem de grandeza de 50 para conseguir replicar o comportamento dos dados. Uma interpretação para a \textit{inexistência} de um \textit{puzzle} neste caso, em constraste com o trabalho de Mehra e Prescott para a economia americana, pode ser a de que o comportamento dos ativos de renda fixa no Brasil faz com que o prêmio de risco visto nos dados seja muito menor do que em outros países. Tal fato implica que o modelo não precisa de parâmetros extremos para replicar o diferencial de retornos.
+Não podemos dizer que encontramos o mesmo problema discutido no artigo original de Mehra e Prescott. Os valores de $\beta$ e em especial de $\sigma$ que fazem com o que o modelo melhor reproduza os dados estão dentro do esperado. Um possível motivo para esta divergência entre este exercício e o trabalho dos autores é o alto retorno dos ativos de renda fixa no Brasil, que reduz o prêmio de risco observado nos dados.
+
 \end{document}
