@@ -34,6 +34,40 @@ Seja $f: \mathbb{R} \rightarrow \mathbb{R}$ dada por $f(x) = x^{3}e^{-x^{2}}$. Q
 \end{enumerate}
 
 \section*{Exercício 2}
+O código deste exercício está em \textit{q2\_.m}. A função é bem comportada e admite máximo global. Analiticamente, pode ser calculado igualando as derivadas parciais a zero, o que nos dá $(x^*, y^*) = (1,0)$. De fato, podemos fazer um análise visual do problema:
+\begin{center}
+	\includegraphics[scale = 0.3]{np_multivariado}
+\end{center}
+
+A grande desvantagem do método de Newton-Raphson é que a condição inicial escolhida afeta de sobremaneira a solução do problema, interferindo na convergência. Então empregamos duas técnicas diferentes.
+
+A primeira consistiu em encontrar uma condição inicial suficientemente próxima ao ponto de máximo e tentar fazer o método convergir. Obtivemos sucesso para  $(x,y) = (1,3; -0,1)$. As iterações estão reportadas abaixo: 
+
+\begin{center}
+	\begin{tabular}{c|c|c|c}
+	Iteração & $x_k$ & $y_k$ & $f(x_k,y_k)$\\
+	\hline 
+	1 & 1.300000000000000  & -0.100000000000000   & 3.539823008849558\\
+	\hline
+   2 & 0.744262295081967   & 0.085245901639344   & 3.654739571567482 \\
+   \hline
+   3 & 1.134856839880570  & -0.044952279960190   & 3.897612839867663\\
+   \hline
+   4 & 0.984617411598269   & 0.005127529467244   & 3.998633306083921\\
+   \hline
+   5 & 1.000021052061707  & -0.000007017353902   & 3.999999997439351\\
+   \hline
+   6 & 0.999999999999946   & 0.000000000000018   & 4.000000000000000\\
+   \hline
+   7 & 1.000000000000000    &               0   & 4.000000000000000\\
+   \hline
+		
+	\end{tabular}
+\end{center}
+
+A segunda técnica é inspirada em nossa implementação estocástica da condição inicial, já utilizada no exercício anterior. Definimos um retângulo no plano $xy$ e impomos que sempre que o método indicar um novo valor para $(x,y)$ que escapa deste conjunto compacto, sortearemos segundo uma distribuição uniforme uma nova condição inicial que não esteja "out of bounds". Isto garante que o método converge com probabilidade 1.
+
+Mais uma vez, a cada vez que executamos o código temos um novo número de iterações pois é comum que tenhamos de usar uma condição inicial estocástica. Em nossos testes, nos restringindo a um quadrado centrado na origem de lado 5. O número mínimo de iterações necessárias para convergência foi de 8 e o número máximo foi de 45, sempre começando a partir da origem, de maneira determinística.
 
 \section*{Exercício 3}
 
