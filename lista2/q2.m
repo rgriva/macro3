@@ -2,7 +2,7 @@
 % Alunos: Alexandre Machado e Raul Guarini
 % Questao 2 - Newton-Raphson multivariado
 
-% ATENCAO: Fazemos forte uso da toolbox de Matemática Simbólica do Matlab!
+% ATENCAO: Fazemos forte uso da toolbox de MatemÃ¡tica SimbÃ³lica do Matlab!
 
 clear all; clc; close all
 
@@ -55,10 +55,10 @@ yk = zeros(maxit,1); yk(1) = xold(2);
 fk = zeros(maxit,1); fk(1) = f(xold(1),xold(2));
 
 % Definindo bounds
-u_boundx = 3;
-l_boundx = -3;
-u_boundy = 3;
-l_boundy = -3;
+u_boundx = 5;
+l_boundx = -5;
+u_boundy = 5;
+l_boundy = -5;
 
 tic
 while dist > tol && it < maxit
