@@ -1,13 +1,13 @@
-function [root, it, value] = bissection_root(f, a, b, tol, maxit)
+function [root, it, value] = bisection_root(f, a, b, tol, maxit)
 % BISSECTION_ROOT uses bissection method to finds the root of a 
-% univariate continuous @-function f in [a, b], providaded that exists one, 
+% univariate continuous @-function f in [a, b], provided that exists one, 
 % with tol being the tolarance parameter for convergence and maxit a 
 % maximal number of iterations.
 
 % Checking if the method works.
 if sign(f(a)) == sign(f(b))
     message = 'Root not assured to exist';
-    disp(message)
+    error(message)
     root = NaN;
 end
 
@@ -22,19 +22,22 @@ end
 
 % Starting iteration
 it = 0;
-c = 0.5 * (a + b);
-while abs(f(c)) > tol & it < maxit
-    if sign(f(c)) ~= sign(f(b))
-        c = 0.5 * (c + b)
+dist = 1;
+
+while dist > tol & it < maxit
+    xm = 0.5 * (a + b);
+    if sign(f(xm))*f(b) < 0
+        a = xm;
     else
-        c = 0.5 * (c + a)
+        b = xm;
     end
-    it = it + 1
+    dist = abs(f(xm));
+    it = it + 1;
 end
 
 % root and final value attained
-root = c;
-value = f(c);
+root = xm;
+value = f(xm);
 
 
 

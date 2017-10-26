@@ -1,0 +1,40 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[brazilian]{babel}
+% \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\linespread{1.3}
+\parskip=12pt
+\parindent=0pt
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\begin{document}
+	\begin{center}
+		{\LARGE{\textbf{Lista 2 - Macroeconomia III 2017}}}\\
+		\vspace{0.2cm}
+		Alunos: Raul Guarini e Alexandre Machado\\
+		Monitora: Kátia Alves\\
+		\today
+	\end{center}
+	
+\section*{Exercício 1} 
+Seja $f: \mathbb{R} \rightarrow \mathbb{R}$ dada por $f(x) = x^{3}e^{-x^{2}}$. Queremos encontrar o máximo global desta função. Como temos uma função diferenciável definida num aberto, podemos buscar os pontos críticos da função e analisar se são pontos de máximo ou não. Para esta tarefa, buscaremos as raízes da derivada: 
+\begin{equation*}
+	f'(x) = e^{-x^2}x^2(3 - 2x^2)
+\end{equation*}
+\begin{enumerate}[A)]
+	\item Pelo formato de $f$, é fácil notar que o máximo estará na parte positiva do domínio. Ainda, $x = 0$ não pode ser um ponto de máximo. Afinal, $f(1) > f(0) = 0$. Diante disso, empregamos o método da bisseção com condições iniciais 0.5 e 5. Programamos uma função para implementar o algoritmo chamada \textit{bissection\_root}. Com 22 iterações, nosso método encontrou um máximo global em $x = 1.2247$, sendo que $f(1.2247) \approx 0.4099$. O tempo de execução foi desprezível, menor que mum segundo.
+	\item A função \textit{np\_univariate} implementa o método de Newton-Raphson num intervalo fechado $[a,b]$. Sabemos que, se houver raiz neste intervalo, o método necessariamente converge. Quando a iteração chega em uma das extremidades, fazemos um sorteio de uma nova condição inicial para que o método prossiga. Foram necessárias 122 iterações para a convergência, feitas em menos de um quarto de segundo. Notamos, contudo, que frente à randomização introduzida, a cada vez que testamos o código podemos ter resultados diferentes com relação ao número de iterações\footnote{Em nossos testes, o menor número de iterações necessárias foi 28 e o maior 130.}. Os valores encontrados para o ponto de máximo e o valor máximo da função foram sempre os mesmos.
+	\item O segundo método mostrou-se mais rápido, apesar de necessitar de mais iterações. O provável motivo é o fato de que este método utiliza informação sobre a curvatura da função durante a iteração, ao passo que o método da bisseção se vale apenas da continuidade. Em contrapartida, não precisamos de uma função diferenciável com o primeiro método.
+	
+\end{enumerate}
+
+\section*{Exercício 2}
+
+\section*{Exercício 3}
+
+\end{document}
