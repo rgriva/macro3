@@ -70,5 +70,26 @@ A segunda técnica é inspirada em nossa implementação estocástica da condição ini
 Mais uma vez, a cada vez que executamos o código temos um novo número de iterações pois é comum que tenhamos de usar uma condição inicial estocástica. Em nossos testes, nos restringindo a um quadrado centrado na origem de lado 5. O número mínimo de iterações necessárias para convergência foi de 8 e o número máximo foi de 45, sempre começando a partir da origem, de maneira determinística.
 
 \section*{Exercício 3}
+\begin{enumerate}[A)]
+	\item Fomos capazes de reproduzir exatamente a tabela A do artigo original, seja para J=2, seja para J = 4. As iterações estão no código anexo.
+	\item 
+	\item Tomamos J = 40 para termos mais pontos num \textit{scatter plot}. Para $\lambda = 0$, temos o seguinte:
+	\begin{figure}[h!]
+	\centering
+		\includegraphics[scale = 0.27]{z_y(z)}
+		\end{figure}
+	
+	De fato, a função em questão é estritamente crescente.
+	
+	\item Com $\lambda = 1$, notamos que o vetor $y^*$ tem suas entradas diminuídas. Isto está em linha com a Proposição 3 do artigo original. Podemos mais uma vez tomar $J = 40$ e repetir o gráfico acima:
+	\begin{figure}[h!]
+	\centering
+		\includegraphics[scale = 0.27]{z_y(z)_lambda1}
+		\end{figure}
+		
+	Veja que apesar de $Z$ variar da mesma forma, a segunda curva alcança valores maiores do que a primeira. Isto se deve ao fato de termos um nível $y(z)$ menor ponto a ponto do domínio, o que eleva a razão $z/y(z)$.
+\end{enumerate}
+
+
 
 \end{document}
