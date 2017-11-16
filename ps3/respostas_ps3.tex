@@ -1,7 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=2cm]{geometry}
 \usepackage[brazilian]{babel}
-
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage[T1]{fontenc}
 \linespread{1.3}
 \parskip=12pt
@@ -31,12 +32,30 @@ Começamos com $\underline{a} = -2$ e $q = 1$ como chute inicial. Consideramos um
 
 O código referente a este exercício é está no arquivo \textit{q1\_ae.m}. Como esperado, ao calcular as distribuições invariantes pelo método iterativo e pelo método do maior autovalor tivemos os mesmos resultados.
 
-Agora, ajustando o valor de $q$ para alcançar market clearing numérico, temos o seguinte:
+Agora, ajustando o valor de $q$ para alcançar market clearing numérico (código disponível no arquivo \textit{q2\_fg.m}), temos o seguinte:
 \begin{center}
 	\includegraphics[scale = 0.25]{preco_ajustado}
 \end{center}
 
 \section*{Exercício 2}
+
+O arquivo \textit{q2.m} contém o código que usamos para reproduzir a tabela do paper em questão. Obtivemos os seguintes resultados:
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale = 0.5]{pi_125}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+  		\centering
+  		\includegraphics[scale = 0.5]{pi63}
+  	\end{subfigure}
+  	
+  	\vspace{0.5cm}
+  	
+  	\includegraphics[scale = 0.5]{pi0}
+\end{figure}
 
 \section*{Exercício 3}
 	
