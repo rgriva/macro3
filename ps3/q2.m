@@ -1,5 +1,6 @@
 % Lista 3 - Macroeconomia III 2017
 % Alunos: Alexandre Machado e Raul Guarini
+% (Fortemente baseado no trabalho de Katia Alves e Ricardo Elias)
 % Questao 2 - Imrohoroglu (1992)
 
 clear all; clc; close all
@@ -13,7 +14,7 @@ pi=input('Escolha pi =  ');
 
 P   = [0.9565,0.0435;0.5,0.5];     
 
-tau = pi;                 % tx. de crescimento da base monet·ria
+tau = pi;                 % tx. de crescimento da base monet√°ria
 
 inc = 0.027;               % incremento 
 g   = 301;                 % tamanho do grid   
@@ -24,7 +25,7 @@ R   = 1/(1+pi);
 % fixando a oferta de moeda
 M       = 5;      
 
-% DiscretizaÁ„o do espaÁo das v.estado
+% Discretiza√ß√£o do espa√ßo das v.estado
 m = linspace(0,inc*300,g);
 m = m';
 m_hj = m*ones(1,g);
@@ -143,25 +144,25 @@ u_med  = lambda' * u;
 
 %% Tabela
 disp(' ')
-info = sprintf('    real cash balances mÈdio          =     %3.4f', m_med);
+info = sprintf('    real cash balances m√©dio          =     %3.4f', m_med);
 disp(info);
 disp(' ')
 info = sprintf('    dp do real cash balance           =     %3.4f', m_dp);
 disp(info);
 disp(' ')
-info = sprintf('    consumo mÈdio                     =     %3.4f', c_med);
+info = sprintf('    consumo m√©dio                     =     %3.4f', c_med);
 disp(info);
 disp(' ')
 info = sprintf('    dp do consumo                     =     %3.4f', c_dp);
 disp(info);
 disp(' ')
-info = sprintf('    renda mÈdia                       =     %3.4f', y_med);
+info = sprintf('    renda m√©dia                       =     %3.4f', y_med);
 disp(info);
 disp(' ')
 info = sprintf('    dp da renda                       =     %3.4f', y_dp);
 disp(info);
 disp(' ')
-info = sprintf('    utilidade mÈdia                   =     %3.4f', u_med);
+info = sprintf('    utilidade m√©dia                   =     %3.4f', u_med);
 disp(info); disp(' ')
  
  
