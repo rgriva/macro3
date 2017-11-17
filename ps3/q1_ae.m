@@ -23,7 +23,7 @@ sigma = 1.5;
 %a_bar = input('Escolha um valor de a_barra (limite de credito): ');
 %q = input('Escolha um valor inicial de q (positivo): ');  % Chute inicial do preco q
 a_bar = -2;
-q = 1.0124;
+q = 1;
 u = @(c) (c.^(1 - sigma))/(1- sigma);
 n = 100;
 a_grid = linspace(a_bar, -3*a_bar, n);
@@ -116,14 +116,3 @@ inv_dist_it = new/sum(new)
 %% Excesso de credito
 
 B = [g(:,1)' g(:,2)']*inv_dist_it    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

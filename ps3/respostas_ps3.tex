@@ -41,6 +41,7 @@ Agora, ajustando o valor de $q$ para alcançar market clearing numérico (código d
 
 O arquivo \textit{q2.m} contém o código que usamos para reproduzir a tabela do paper em questão. Obtivemos os seguintes resultados:
 
+\vspace{0.5cm}
 \begin{figure}[h!]
 	\centering
 	\begin{subfigure}{.5\textwidth}
@@ -58,6 +59,29 @@ O arquivo \textit{q2.m} contém o código que usamos para reproduzir a tabela do p
 \end{figure}
 
 \section*{Exercício 3}
+
+O código presente em \textit{q3.m} resolve este exercício de forma genérica, bastando para isso redefinir os parâmetros quando necessário. Utilizamos 100 pontos num grid para o capital. O método para encontrar distribuições invariantes utilizado por o método iterativo, implementado através da função \textit{inv\_dist\_num}.
+
+\begin{enumerate}[A)]
+	\item Com a parametrização descrita na lista, os valores de equilíbrio encontrados foram:
+\[	 K = 6.9904, \quad r = 0.0825, \quad w = 1.4656
+\]
+	O trabalho de estado estacionário foi de 0.7.
+
+	\item Com a nova parametrização para a matriz de transição que governa os choques idiossincráticos, obtivemos:
+	\[	 K = 5.2166, \quad r = 0.0812, \quad w = 1.4791
+\]
+
+O trabalho de estado estacionário calculado foi de 0.509. Assim, vemos que houve redução no estoque de capital de equilíbrio bem como uma redução no nível de trabalho efetivo do estado estacionário, apesar da taxa de juros e dos salários se manterem praticamente constantes.
+
+A mudança na matriz de transição implica uma economia menos produtiva. Isto se traduz em um menor nível de trabalho efetivo no estado estacionário. Este efeito, por sua vez, reduz a produtividade marginal do capital, desincentivando a poupança, o que leva a um nível menor de capital em equilíbrio. A razão $k/L$ se manteve relativamente inalterada, o que pode ser confirmado através da observação que os preços relativos praticamente não mudaram.
+
+	\item Aqui, retornamos à especificação inicial da matriz de transição e alteramos apenas o parâmetro de depreciação:
+	\[	 K = 8.9992, \quad r = 0.0702, \quad w = 1.6049
+\]
+
+O trabalho de estado estacionário foi de 0.7 (assim como no primeiro item uma vez que isto só depende do espaço dos choques $\eta$ e da matriz de transição). Notamos que em equilíbrio o nível de capital é maior. A diminuição da taxa de depreciação atuou no sentido de aumentar o retorno líquido do investimento em capital físico, o que incentivou a poupança. A maior disponibilidade do ativo em questão levou a taxa de juros para um patamar menor do que o anterior. Como a oferta de trabalho era a mesma mas a produtividade marginal havia aumentado face à característica da função de produção utilizada, o ajuste no mercado de trabalho se deu através do salário, que foi majorado.
+\end{enumerate} 
 	
 
 \end{document}
