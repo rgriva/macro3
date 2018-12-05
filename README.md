@@ -1,4 +1,4 @@
 # Macro III - 2017
-Códigos utilizados na disciplina de Macro III do mestrado da EPGE/FGV em 2017. Certamente existem erros e sempre que encontrá-los é ótima ideia fazer um *pull request* ! As próximas gerações da EPGE te agradecerão!
+This is code for the Macroeconomic Theory III course at FGV-EPGE, given in 2017 by Prof. Ricardo Cavalcanti. There are a few bug here and there and I would be happy to receive any *pull requests*!
 
-Use por sua conta em risco.
+Use at your own responsibility.
